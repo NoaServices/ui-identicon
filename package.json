@@ -1,10 +1,10 @@
 {
   "name": "@tsiry/ui-identicon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Renders an SVG picture representing an address",
   "main": "index.js",
   "scripts": {
-    "build": "polkadot-dev-build-babel",
+    "build": "babel src --out-dir . --extensions \".ts,.tsx\"",
     "check": "eslint src && flow check",
     "test": "echo \"Tests only available from root wrapper\""
   },
@@ -23,6 +23,13 @@
   },
   "devDependencies": {
     "@polkadot/util-crypto": "^0.30.3",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-typescript": "^7.0.0",
+    "typescript": "~2.7.1",
     "xmlserializer": "^0.6.1"
   },
   "publishConfig": {
