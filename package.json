@@ -1,6 +1,6 @@
 {
   "name": "@tsiry/ui-identicon",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Renders an SVG picture representing an address",
   "main": "index.js",
   "scripts": {
