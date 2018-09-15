@@ -1,12 +1,13 @@
 {
   "name": "@tsiry/ui-identicon",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Renders an SVG picture representing an address",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir . --extensions \".ts,.tsx\"",
     "check": "eslint src && flow check",
-    "test": "echo \"Tests only available from root wrapper\""
+    "test": "echo \"Tests only available from root wrapper\"",
+    "prepublishOnly": "babel src --out-dir . --extensions \".ts,.tsx\""
   },
   "author": "Tsiry Sandratraina <tsiryid@gmail.com>",
   "maintainers": [
